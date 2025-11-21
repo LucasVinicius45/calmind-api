@@ -10,6 +10,14 @@
 
 ---
 
+## 🎥 Vídeo Demonstrativo
+
+**Link do Vídeo:** [https://youtu.be/ptcRJjIRDOA]
+
+> Vídeo demonstrando o funcionamento completo da solução de forma integrada (máx. 5 minutos).
+
+---
+
 ## Sobre o Projeto
 
 **CalMind** é uma API RESTful desenvolvida em ASP.NET Core 8.0 para gerenciar reservas de cápsulas de relaxamento em ambientes corporativos, promovendo o bem-estar e a saúde mental no futuro do trabalho.
