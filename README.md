@@ -1,6 +1,6 @@
-# ?? CalMind API - Sistema de Reserva de Cápsulas de Relaxamento
+ï»¿# CalMind API - Sistema de Reserva de Capsulas de Relaxamento
 
-## ?? Integrantes
+## Integrantes
 
 | Nome | RM |
 |------|-----|
@@ -10,111 +10,111 @@
 
 ---
 
-## ?? Sobre o Projeto
+## Sobre o Projeto
 
-**CalMind** é uma API RESTful desenvolvida em ASP.NET Core 8.0 para gerenciar reservas de cápsulas de relaxamento em ambientes corporativos, promovendo o bem-estar e a saúde mental no futuro do trabalho.
+**CalMind** Ã© uma API RESTful desenvolvida em ASP.NET Core 8.0 para gerenciar reservas de cÃ¡psulas de relaxamento em ambientes corporativos, promovendo o bem-estar e a saÃºde mental no futuro do trabalho.
 
-### ?? Tema: O Futuro do Trabalho
+### Tema: O Futuro do Trabalho
 
-Com o aumento do estresse e burnout no ambiente corporativo, o CalMind propõe uma solução tecnológica para facilitar o acesso a espaços de relaxamento, contribuindo para a saúde mental e produtividade dos colaboradores.
-
----
-
-## ?? Funcionalidades
-
-### ?? Autenticação e Segurança
-- ? Registro de usuários (Admin e User)
-- ? Login com geração de Token JWT
-- ? Autenticação Stateless
-- ? Autorização baseada em perfis (Roles)
-- ? Hash de senhas com BCrypt
-
-### ?? Gerenciamento de Cápsulas
-- ? Cadastro de cápsulas (apenas Admin)
-- ? Consulta de cápsulas por ID
-- ? Configuração de duração por cápsula
-
-### ?? Sistema de Reservas
-- ? Criação de reservas com validação de conflitos
-- ? Limite de 2 reservas por colaborador/semana
-- ? Consulta de horários disponíveis
-- ? Cancelamento de reservas
-- ? Listagem de reservas por colaborador
+Com o aumento do estresse e burnout no ambiente corporativo, o CalMind propÃµe uma soluÃ§Ã£o tecnolÃ³gica para facilitar o acesso a espaÃ§os de relaxamento, contribuindo para a saÃºde mental e produtividade dos colaboradores.
 
 ---
 
-## ??? Tecnologias Utilizadas
+## Funcionalidades
 
-| Tecnologia | Versão | Descrição |
+### Autenticacao e Seguranca
+- Registro de usuÃ¡rios (Admin e User)
+- Login com geraÃ§Ã£o de Token JWT
+- AutenticaÃ§Ã£o Stateless
+- AutorizaÃ§Ã£o baseada em perfis (Roles)
+- Hash de senhas com BCrypt
+
+### Gerenciamento de Capsulas
+- Cadastro de cÃ¡psulas (apenas Admin)
+- Consulta de cÃ¡psulas por ID
+- ConfiguraÃ§Ã£o de duraÃ§Ã£o por cÃ¡psula
+
+### Sistema de Reservas
+- CriaÃ§Ã£o de reservas com validaÃ§Ã£o de conflitos
+- Limite de 2 reservas por colaborador/semana
+- Consulta de horÃ¡rios disponÃ­veis
+- Cancelamento de reservas
+- Listagem de reservas por colaborador
+
+---
+
+## Tecnologias Utilizadas
+
+| Tecnologia | VersÃ£o | DescriÃ§Ã£o |
 |------------|--------|-----------|
 | ASP.NET Core | 8.0 | Framework Web API |
 | Entity Framework Core | 8.0.10 | ORM para acesso a dados |
 | MySQL | 8.0+ | Banco de dados relacional |
 | Pomelo.EntityFrameworkCore.MySql | 8.0.2 | Provider MySQL |
-| JWT Bearer | 8.0.10 | Autenticação |
+| JWT Bearer | 8.0.10 | AutenticaÃ§Ã£o |
 | BCrypt.Net-Next | 4.0.3 | Criptografia de senhas |
-| Swagger/OpenAPI | 6.6.2 | Documentação da API |
+| Swagger/OpenAPI | 6.6.2 | DocumentaÃ§Ã£o da API |
 
 ---
 
-## ?? Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 Calmind.Api/
-??? Controllers/          # Endpoints da API
-?   ??? AuthController.cs
-?   ??? CapsuleController.cs
-?   ??? CollaboratorController.cs
-?   ??? ReservationController.cs
-??? Services/             # Lógica de negócio
-?   ??? Interfaces/
-?   ??? AuthService.cs
-?   ??? JwtService.cs
-?   ??? CapsuleService.cs
-?   ??? CollaboratorService.cs
-?   ??? ReservationService.cs
-??? Repositories/         # Acesso a dados
-?   ??? Interfaces/
-?   ??? Implementações...
-??? Models/               # Entidades do domínio
-?   ??? Collaborator.cs
-?   ??? Capsule.cs
-?   ??? Reservation.cs
-??? DTOs/                 # Data Transfer Objects
-??? Data/                 # Contexto do EF Core
-??? Middleware/           # Tratamento de exceções
-??? Migrations/           # Migrações do banco
+â”œâ”€â”€ Controllers/          # Endpoints da API
+â”‚   â”œâ”€â”€ AuthController.cs
+â”‚   â”œâ”€â”€ CapsuleController.cs
+â”‚   â”œâ”€â”€ CollaboratorController.cs
+â”‚   â””â”€â”€ ReservationController.cs
+â”œâ”€â”€ Services/             # LÃ³gica de negÃ³cio
+â”‚   â”œâ”€â”€ Interfaces/
+â”‚   â”œâ”€â”€ AuthService.cs
+â”‚   â”œâ”€â”€ JwtService.cs
+â”‚   â”œâ”€â”€ CapsuleService.cs
+â”‚   â”œâ”€â”€ CollaboratorService.cs
+â”‚   â””â”€â”€ ReservationService.cs
+â”œâ”€â”€ Repositories/         # Acesso a dados
+â”‚   â”œâ”€â”€ Interfaces/
+â”‚   â””â”€â”€ ImplementaÃ§Ãµes...
+â”œâ”€â”€ Models/               # Entidades do domÃ­nio
+â”‚   â”œâ”€â”€ Collaborator.cs
+â”‚   â”œâ”€â”€ Capsule.cs
+â”‚   â””â”€â”€ Reservation.cs
+â”œâ”€â”€ DTOs/                 # Data Transfer Objects
+â”œâ”€â”€ Data/                 # Contexto do EF Core
+â”œâ”€â”€ Middleware/           # Tratamento de exceÃ§Ãµes
+â””â”€â”€ Migrations/           # MigraÃ§Ãµes do banco
 ```
 
 ---
 
-## ?? Fluxo de Dados
+## Fluxo de Dados
 
-### Arquitetura da Aplicação
+### Arquitetura da Aplicacao
 
 ```mermaid
 flowchart TB
     subgraph Cliente
-        A[?? Usuário/Postman/Swagger]
+        A[Usuario/Postman/Swagger]
     end
     
     subgraph API[API CalMind - ASP.NET Core 8]
-        B[?? JWT Authentication]
-        C[?? Global Exception Handler]
-        D[?? Controllers]
-        E[?? Services]
-        F[?? Repositories]
+        B[JWT Authentication]
+        C[Global Exception Handler]
+        D[Controllers]
+        E[Services]
+        F[Repositories]
     end
     
     subgraph Banco[Banco de Dados]
-        G[(??? MySQL)]
+        G[(MySQL)]
     end
     
     A -->|1. HTTP Request| B
-    B -->|2. Token Válido| D
-    B -.->|Token Inválido| A
+    B -->|2. Token Valido| D
+    B -.->|Token Invalido| A
     D -->|3. Chama| E
-    E -->|4. Regras de Negócio| F
+    E -->|4. Regras de Negocio| F
     F -->|5. Query/Command| G
     G -->|6. Dados| F
     F -->|7. Retorno| E
@@ -125,19 +125,19 @@ flowchart TB
     C -.->|Captura Erros| E
 ```
 
-### Fluxo de Criação de Reserva
+### Fluxo de Criacao de Reserva
 
 ```mermaid
 flowchart LR
-    A[?? Request] --> B{?? Autenticado?}
-    B -->|Não| C[? 401 Unauthorized]
-    B -->|Sim| D{?? Cápsula Ativa?}
-    D -->|Não| E[? 400 Bad Request]
-    D -->|Sim| F{? Horário Livre?}
-    F -->|Não| G[? 409 Conflict]
-    F -->|Sim| H{?? Limite Semana?}
-    H -->|Excedido| I[? 400 Limite Atingido]
-    H -->|OK| J[? 201 Reserva Criada]
+    A[Request] --> B{Autenticado?}
+    B -->|Nao| C[401 Unauthorized]
+    B -->|Sim| D{Capsula Ativa?}
+    D -->|Nao| E[400 Bad Request]
+    D -->|Sim| F{Horario Livre?}
+    F -->|Nao| G[409 Conflict]
+    F -->|Sim| H{Limite Semana?}
+    H -->|Excedido| I[400 Limite Atingido]
+    H -->|OK| J[201 Reserva Criada]
 ```
 
 ### Modelo de Dados
@@ -179,9 +179,9 @@ erDiagram
 
 ---
 
-## ?? Como Executar
+## Como Executar
 
-### Pré-requisitos
+### Pre-requisitos
 
 - .NET 8.0 SDK
 - MySQL Server 8.0+
@@ -189,7 +189,7 @@ erDiagram
 
 ### Passo a Passo
 
-**1. Clone o repositório:**
+**1. Clone o repositÃ³rio:**
 ```bash
 git clone https://github.com/LucasVinicius45/calmind-api.git
 cd Calmind.Api
@@ -227,65 +227,64 @@ https://localhost:7186/swagger
 
 ---
 
-## ?? Endpoints da API (v1)
+## Endpoints da API (v1)
 
-### ?? Autenticação (`/api/v1/Auth`)
+### Autenticacao (`/api/v1/Auth`)
 
-| Método | Endpoint | Descrição | Auth |
+| MÃ©todo | Endpoint | DescriÃ§Ã£o | Auth |
 |--------|----------|-----------|------|
-| POST | `/register` | Registrar usuário | ? |
-| POST | `/login` | Fazer login | ? |
+| POST | `/register` | Registrar usuÃ¡rio | NÃ£o |
+| POST | `/login` | Fazer login | NÃ£o |
 
-### ?? Cápsulas (`/api/v1/Capsule`)
+### Capsulas (`/api/v1/Capsule`)
 
-| Método | Endpoint | Descrição | Auth |
+| MÃ©todo | Endpoint | DescriÃ§Ã£o | Auth |
 |--------|----------|-----------|------|
-| POST | `/` | Criar cápsula | ?? Admin |
-| GET | `/{id}` | Buscar por ID | ?? User/Admin |
+| POST | `/` | Criar cÃ¡psula | Admin |
+| GET | `/{id}` | Buscar por ID | User/Admin |
 
-### ?? Reservas (`/api/v1/Reservation`)
+### Reservas (`/api/v1/Reservation`)
 
-| Método | Endpoint | Descrição | Auth |
+| MÃ©todo | Endpoint | DescriÃ§Ã£o | Auth |
 |--------|----------|-----------|------|
-| POST | `/` | Criar reserva | ?? User/Admin |
-| GET | `/{id}` | Buscar por ID | ?? User/Admin |
-| GET | `/collaborator/{id}` | Listar por colaborador | ?? User/Admin |
-| GET | `/availability/{capsuleId}` | Verificar disponibilidade | ?? User/Admin |
-| DELETE | `/{id}` | Cancelar reserva | ?? User/Admin |
+| POST | `/` | Criar reserva | User/Admin |
+| GET | `/{id}` | Buscar por ID | User/Admin |
+| GET | `/collaborator/{id}` | Listar por colaborador | User/Admin |
+| GET | `/availability/{capsuleId}` | Verificar disponibilidade | User/Admin |
+| DELETE | `/{id}` | Cancelar reserva | User/Admin |
 
-### ?? Colaboradores (`/api/v1/Collaborator`)
+### Colaboradores (`/api/v1/Collaborator`)
 
-| Método | Endpoint | Descrição | Auth |
+| MÃ©todo | Endpoint | DescriÃ§Ã£o | Auth |
 |--------|----------|-----------|------|
-| GET | `/{id}` | Buscar por ID | ?? Admin |
-| GET | `/by-email/{email}` | Buscar por email | ?? Admin |
+| GET | `/{id}` | Buscar por ID | Admin |
+| GET | `/by-email/{email}` | Buscar por email | Admin |
 
 ---
 
-## ?? Regras de Negócio
+## Regras de Negocio
 
-| Regra | Descrição |
+| Regra | DescriÃ§Ã£o |
 |-------|-----------|
-| **Limite Semanal** | Máximo de 2 reservas por colaborador por semana (segunda a domingo) |
-| **Conflito de Horário** | Não permite reservas sobrepostas na mesma cápsula |
-| **Duração Automática** | EndAt = StartAt + DurationMinutes da cápsula |
-| **Cápsulas Ativas** | Apenas cápsulas com `IsActive = true` aceitam reservas |
-| **Autorização** | Admin: acesso total / User: apenas próprios dados |
+| **Limite Semanal** | MÃ¡ximo de 2 reservas por colaborador por semana (segunda a domingo) |
+| **Conflito de HorÃ¡rio** | NÃ£o permite reservas sobrepostas na mesma cÃ¡psula |
+| **DuraÃ§Ã£o AutomÃ¡tica** | EndAt = StartAt + DurationMinutes da cÃ¡psula |
+| **CÃ¡psulas Ativas** | Apenas cÃ¡psulas com `IsActive = true` aceitam reservas |
+| **AutorizaÃ§Ã£o** | Admin: acesso total / User: apenas prÃ³prios dados |
 
 ---
 
-## ?? Segurança Implementada
+## Seguranca Implementada
 
-- ? **JWT Authentication** - Tokens com validade de 60 minutos
-- ? **Autorização por Roles** - Admin e User com permissões diferentes
-- ? **BCrypt** - Senhas armazenadas com hash seguro
-- ? **Tratamento Global de Exceções** - Respostas padronizadas
-- ? **Validação de Dados** - Data Annotations nos DTOs
+- **JWT Authentication** - Tokens com validade de 60 minutos
+- **AutorizaÃ§Ã£o por Roles** - Admin e User com permissÃµes diferentes
+- **BCrypt** - Senhas armazenadas com hash seguro
+- **Tratamento Global de ExceÃ§Ãµes** - Respostas padronizadas
+- **ValidaÃ§Ã£o de Dados** - Data Annotations nos DTOs
 
 ---
 
-
-## ?? Exemplos de Requisições
+## Exemplos de Requisicoes
 
 ### Registrar Admin
 ```json
@@ -298,16 +297,16 @@ POST /api/v1/Auth/register
 }
 ```
 
-### Criar Cápsula
+### Criar Capsula
 ```json
 POST /api/v1/Capsule
 Authorization: Bearer {token}
 {
-  "name": "Cápsula Mindfulness",
-  "location": "Andar 4 - Setor de Inovação",
+  "name": "Capsula Mindfulness",
+  "location": "Andar 4 - Setor de Inovacao",
   "isActive": true,
   "durationMinutes": 35,
-  "features": "Cromoterapia, aromas cítricos"
+  "features": "Cromoterapia, aromas citricos"
 }
 ```
 
@@ -324,7 +323,7 @@ Authorization: Bearer {token}
 
 ---
 
-## ?? Referências
+## Referencias
 
 - [ASP.NET Core Documentation](https://docs.microsoft.com/aspnet/core)
 - [Entity Framework Core](https://docs.microsoft.com/ef/core)
@@ -333,7 +332,7 @@ Authorization: Bearer {token}
 
 ---
 
-## ?? Licença
+## Licenca
 
-Projeto desenvolvido para a **Global Solution 2º Semestre** - FIAP  
-Disciplina: **Software Development C# e Arquitetura Orientada A Serviços**
+Projeto desenvolvido para a **Global Solution 2 Semestre** - FIAP  
+Disciplina: **Software Development C# e Arquitetura Orientada A Servicos**
